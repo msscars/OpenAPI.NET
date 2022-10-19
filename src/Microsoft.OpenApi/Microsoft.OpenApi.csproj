@@ -12,7 +12,7 @@
         <Title>Microsoft.OpenApi</Title>
         <PackageIdPrefix></PackageIdPrefix>
         <PackageId>$(PackageIdPrefix)Microsoft.OpenApi</PackageId>
-        <Version>1.4.4-sb2</Version>
+        <Version>1.4.4-sb3</Version>
         <Description>.NET models with JSON and YAML writers for OpenAPI specification</Description>
         <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
         <PackageTags>OpenAPI .NET</PackageTags>
