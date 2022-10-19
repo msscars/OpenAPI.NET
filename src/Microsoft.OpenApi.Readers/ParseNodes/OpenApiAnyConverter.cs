@@ -64,10 +64,7 @@ namespace Microsoft.OpenApi.Readers.ParseNodes
                 // More narrow type detection for explicit strings, only check types that are passed as strings
                 if (schema == null)
                 {
-                    if (DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateTimeValue))
-                    {
-                        return new OpenApiDateTime(dateTimeValue);
-                    }
+                    return new OpenApiString(value);
                 }
                 else if (type == "string")
                 {
@@ -93,18 +90,12 @@ namespace Microsoft.OpenApi.Readers.ParseNodes
 
                     if (format == "date")
                     {
-                        if (DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateValue))
-                        {
-                            return new OpenApiDate(dateValue.Date);
-                        }
+                        return new OpenApiString(value);
                     }
 
                     if (format == "date-time")
                     {
-                        if (DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateTimeValue))
-                        {
-                            return new OpenApiDateTime(dateTimeValue);
-                        }
+                        return new OpenApiString(value);
                     }
 
                     if (format == "password")
@@ -148,10 +139,7 @@ namespace Microsoft.OpenApi.Readers.ParseNodes
                     return new OpenApiDouble(doubleValue);
                 }
 
-                if (DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateTimeValue))
-                {
-                    return new OpenApiDateTime(dateTimeValue);
-                }
+                return new OpenApiString(value);
             }
             else
             {
@@ -226,18 +214,12 @@ namespace Microsoft.OpenApi.Readers.ParseNodes
 
                 if (type == "string" && format == "date")
                 {
-                    if (DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateValue))
-                    {
-                        return new OpenApiDate(dateValue.Date);
-                    }
+                    return new OpenApiString(value);
                 }
 
                 if (type == "string" && format == "date-time")
                 {
-                    if (DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateTimeValue))
-                    {
-                        return new OpenApiDateTime(dateTimeValue);
-                    }
+                    return new OpenApiString(value);
                 }
 
                 if (type == "string" && format == "password")
