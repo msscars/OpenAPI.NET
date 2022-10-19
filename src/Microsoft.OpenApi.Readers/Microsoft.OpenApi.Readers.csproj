@@ -39,7 +39,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\$(PackageIdPrefix)Microsoft.OpenApi\$(PackageIdPrefix)Microsoft.OpenApi.csproj" />
+        <ProjectReference Include="..\Microsoft.OpenApi\Microsoft.OpenApi.csproj" />
     </ItemGroup>
 
     <ItemGroup>
