@@ -9,7 +9,8 @@
         <Authors>Microsoft</Authors>
         <Company>Microsoft</Company>
         <Title>Microsoft.OpenApi.Readers</Title>
-        <PackageId>Microsoft.OpenApi.Readers</PackageId>
+        <PackageIdPrefix></PackageIdPrefix>
+        <PackageId>$(PackageIdPrefix)Microsoft.OpenApi.Readers</PackageId>
         <Version>1.4.4-preview1</Version>
         <Description>OpenAPI.NET Readers for JSON and YAML documents</Description>
         <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>

@@ -12,7 +12,8 @@
     <Authors>Microsoft</Authors>
     <Company>Microsoft</Company>
     <Title>Microsoft.OpenApi.Hidi</Title>
-    <PackageId>Microsoft.OpenApi.Hidi</PackageId>
+    <PackageIdPrefix></PackageIdPrefix>
+    <PackageId>$(PackageIdPrefix)Microsoft.OpenApi.Hidi</PackageId>
     <ToolCommandName>hidi</ToolCommandName>
     <PackageOutputPath>./../../artifacts</PackageOutputPath>
     <Version>1.1.0-preview2</Version>
